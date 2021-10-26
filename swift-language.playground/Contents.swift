@@ -104,6 +104,21 @@ protocol Speak {
     func speak()
 }
 
+extension Speak {
+    var speakSound: String {
+        return "ouch"
+    }
+    func speak() {
+        print("goes \(speakSound)")
+    }
+}
+
+class DogSpeak: Speak { }
+
+let dogSpeak = DogSpeak()
+dogSpeak.speakSound
+dogSpeak.speak()
+
 class Cat: Pet, Speak {
     
     let speakSound: String = "meow"

@@ -194,3 +194,68 @@ class ImageView: onLongTouchProtocol {
 
     }
 }
+
+// Interface Segregation Principle
+
+protocol Cacheable {
+    func retrieveAccessToken()
+}
+
+protocol UserProtocol: Cacheable {
+    func retreiveUserID()
+}
+
+protocol FetchNewsProtocol {
+    var accessToken: Cacheable { get set }
+    func getNews()
+}
+
+protocol FetchProfileProtocol {
+    var userID: UserProtocol { get set }
+    func getProfile()
+}
+
+struct FetchNews: FetchNewsProtocol {
+    var accessToken: Cacheable
+
+    func getNews() {
+        // Use the accessToken to retrieve the news
+    }
+}
+
+struct FetchProfile: FetchProfileProtocol {
+    var userID: UserProtocol
+
+    func getProfile() {
+        // Use the userID to retreive the profile
+    }
+}
+
+// Dependency Inversion Principle
+
+struct User {
+    let id: String
+    let name: String
+}
+
+protocol DatabaseService {
+  func getUsers()-> [User]
+}
+
+class CoreDataService: DatabaseService {
+    func getUsers() -> [User] {
+        // Get user from Core Data
+        return [User]()
+    }
+}
+
+class RealmService: DatabaseService {
+    func getUsers() -> [User] {
+        // Get user from Realm
+        return [User]()
+    }
+}
+
+let databaseService: DatabaseService = CoreDataService()
+
+

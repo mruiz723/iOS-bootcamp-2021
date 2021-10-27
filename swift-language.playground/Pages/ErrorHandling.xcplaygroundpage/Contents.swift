@@ -4,29 +4,6 @@ import Foundation
 
 // Error Handling (throw, do try catch, error to optional value)
 
-enum SpeakError: Error {
-    case cantSpeak
-}
-struct Speaker {
-    func speak() {
-        print("hi!")
-    }
-}
-
-func tryToSpeak(instance: Speaker?) throws {
-    if instance == nil {
-        throw SpeakError.cantSpeak
-    }
-    instance?.speak()
-}
-
-do {
-    try tryToSpeak(instance: nil)
-    try tryToSpeak(instance: Speaker())
-} catch {
-    print(error)
-}
-
 enum VendingMachineError: Error {
     case invalidSelection
     case insufficientFunds(coinsNeeded: Int)
@@ -74,9 +51,12 @@ let favoriteSnacks = [
     "Bob": "Licorice",
     "Eve": "Pretzels",
 ]
+
 func buyFavoriteSnack(person: String, vendingMachine: VendingMachine) throws {
     let snackName = favoriteSnacks[person] ?? "Candy Bar"
     try vendingMachine.vend(itemNamed: snackName)
 }
 
 try buyFavoriteSnack(person: "", vendingMachine: VendingMachine())
+
+//: [Concurrency](@next)

@@ -203,7 +203,7 @@ protocol Cacheable {
 
 protocol UserProtocol {
     var accessToken: Cacheable { get }
-    func retreiveUserID(completion: (Result<String, Error>) -> Void)
+    func retreiveUserID(completion: (Result<Int, Error>) -> Void)
 }
 
 struct KeychainToken: Cacheable {
@@ -213,23 +213,22 @@ struct KeychainToken: Cacheable {
     }
 }
 
-struct KeychainUser: UserProtocol {
-
+struct FetchUserID: UserProtocol {
     var accessToken: Cacheable
 
-    func retreiveUserID(completion: (Result<String, Error>) -> Void) {
+    func retreiveUserID(completion: (Result<Int, Error>) -> Void) {
         // Get the userID using the token
-        completion(.success(""))
+        completion(.success(1234))
     }
 }
 
 protocol FetchNewsProtocol {
-    var accessToken: Cacheable { get set }
+    var accessToken: Cacheable { get }
     func getNews(completion: (Result<String, Error>) -> Void)
 }
 
 protocol FetchProfileProtocol {
-    var userID: UserProtocol { get set }
+    var userID: Int { get }
     func getProfile(completion: (Result<String, Error>) -> Void)
 }
 
@@ -243,7 +242,7 @@ struct FetchNews: FetchNewsProtocol {
 }
 
 struct FetchProfile: FetchProfileProtocol {
-    var userID: UserProtocol
+    var userID: Int
 
     func getProfile(completion: (Result<String, Error>) -> Void) {
         // Use the userID to retreive the profile

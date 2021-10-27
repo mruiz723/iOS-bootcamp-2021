@@ -198,36 +198,56 @@ class ImageView: onLongTouchProtocol {
 // Interface Segregation Principle
 
 protocol Cacheable {
-    func retrieveAccessToken()
+    func retrieveAccessToken() -> String
 }
 
-protocol UserProtocol: Cacheable {
-    func retreiveUserID()
+protocol UserProtocol {
+    var accessToken: Cacheable { get }
+    func retreiveUserID(completion: (Result<String, Error>) -> Void)
+}
+
+struct KeychainToken: Cacheable {
+    func retrieveAccessToken() -> String {
+        // get the token from Keychain
+        return ""
+    }
+}
+
+struct KeychainUser: UserProtocol {
+
+    var accessToken: Cacheable
+
+    func retreiveUserID(completion: (Result<String, Error>) -> Void) {
+        // Get the userID using the token
+        completion(.success(""))
+    }
 }
 
 protocol FetchNewsProtocol {
     var accessToken: Cacheable { get set }
-    func getNews()
+    func getNews(completion: (Result<String, Error>) -> Void)
 }
 
 protocol FetchProfileProtocol {
     var userID: UserProtocol { get set }
-    func getProfile()
+    func getProfile(completion: (Result<String, Error>) -> Void)
 }
 
 struct FetchNews: FetchNewsProtocol {
     var accessToken: Cacheable
 
-    func getNews() {
+    func getNews(completion: (Result<String, Error>) -> Void) {
         // Use the accessToken to retrieve the news
+        completion(.success(""))
     }
 }
 
 struct FetchProfile: FetchProfileProtocol {
     var userID: UserProtocol
 
-    func getProfile() {
+    func getProfile(completion: (Result<String, Error>) -> Void) {
         // Use the userID to retreive the profile
+        completion(.success(""))
     }
 }
 

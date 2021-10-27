@@ -13,7 +13,7 @@ struct Row {
     let title: String
 }
 
-protocol Target {
+protocol Table {
 
     var titleForTable: String? { get }
 
@@ -31,7 +31,7 @@ class TableAdapter {
     }
 }
 
-extension TableAdapter: Target {
+extension TableAdapter: Table {
 
     var titleForTable: String? {
         return incompatibleType.first?.title
@@ -46,13 +46,13 @@ extension TableAdapter: Target {
     }
 }
 
-let row = [
+let rows: [Row] = [
     Row(title: "first"),
     Row(title: "second"),
     Row(title: "third")
 ]
 
-let adapter = TableAdapter(row)
+let tableAdapter = TableAdapter(rows)
 
 // Decorator
 
@@ -117,12 +117,12 @@ class TeslaDecorator: Tesla {
 
 var model3: Tesla = Model3()
 
-print(model3.price)
-print(model3.name)
+print(model3.name, model3.price) // Model 3 75500.0
 
 model3 = WheelUpgrades(car: model3)
-print(model3.price)
-print(model3.name)
+
+print(model3.name, model3.price) // Model 3 17 in rims 78500.0
+
 
 // Builder
 
@@ -164,17 +164,9 @@ let orderBuilder = OrderBuilder(["Burger", "Fries"])
 print(orderBuilder.contents)
 
 
-// Singleton
+// Flyweight
 
 class FilmDirector {
-    static let singleton = FilmDirector()
-    
-    private init() {
-        
-    }
-}
-
-extension FilmDirector {
     func monitoringBudgets() {
         
     }
@@ -189,17 +181,40 @@ extension FilmDirector {
     }
 }
 
+class Factory {
+    
+    private static let singleton = Factory()
+    private init() {}
+    
+    private var directors: [String: FilmDirector] = []
+    
+    static func directorFor(_ movie: String) -> FilmDirector {
+        let singleton = Factory.singleton
+        
+        if let director = singleton.directors[movie] {
+            return director
+        } else {
+            let director = FilmDirector()
+            singleton.directors[movie] = director
+            
+            return director
+        }
+    }
+}
+
+let movie = "Back to the future IV"
+
 func preProduction() {
-    FilmDirector.singleton.hostAuditions()
-    FilmDirector.singleton.monitoringBudgets()
+    Factory.directorFor(movie).hostAuditions()
+    Factory.directorFor(movie).monitoringBudgets()
 }
 
 func production() {
-    FilmDirector.singleton.overseeingCameraWork()
-    FilmDirector.singleton.monitoringBudgets()
+    Factory.directorFor(movie).overseeingCameraWork()
+    Factory.directorFor(movie).monitoringBudgets()
 }
 
 func postProduction() {
-    FilmDirector.singleton.workWithSoundMusic()
-    FilmDirector.singleton.monitoringBudgets()
+    Factory.directorFor(movie).workWithSoundMusic()
+    Factory.directorFor(movie).monitoringBudgets()
 }

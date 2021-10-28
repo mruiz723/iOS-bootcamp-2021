@@ -186,7 +186,7 @@ class Factory {
     private static let singleton = Factory()
     private init() {}
     
-    private var directors: [String: FilmDirector] = []
+    private var directors: [String: FilmDirector] = [:]
     
     static func directorFor(_ movie: String) -> FilmDirector {
         let singleton = Factory.singleton

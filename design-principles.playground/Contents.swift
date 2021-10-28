@@ -116,6 +116,10 @@ let area = totalAreaFor(shapes: [Rectangle(width: 10, height: 10), Circle(radius
 
 // L — Liskov’s Substitution Principle
 
+enum AnimalError: Error {
+    case cantMakeNoise
+}
+
 class Animal {
     func makeNoise() throws {
         print("I am making noise")
@@ -141,27 +145,22 @@ func _makeNoise(animal: Cat) {
 _makeNoise(animal: Cat())
 
 // Refactor
-
-
-enum AnimalError: Error {
-    case cantMakeNoise
-}
-
-class DumbDog: Animal {
-    override func makeNoise() throws {
-        throw AnimalError.cantMakeNoise
-    }
-}
-
-func makeNoise(animal: DumbDog) {
-    do {
-        try animal.makeNoise()
-    } catch {
-        print(error)
-    }
-}
-
-makeNoise(animal: DumbDog())
+//
+//class DumbDog: Animal {
+//    override func makeNoise() throws {
+//        throw AnimalError.cantMakeNoise
+//    }
+//}
+//
+//func makeNoise(animal: DumbDog) {
+//    do {
+//        try animal.makeNoise()
+//    } catch {
+//        print(error)
+//    }
+//}
+//
+//makeNoise(animal: DumbDog())
 
 // I — Interface Segregation Principle
 

@@ -2,6 +2,24 @@
 
 import Foundation
 
+// Extensions
+
+class Dog {
+    let name: String
+    init(name: String) {
+        self.name = name
+    }
+}
+
+extension Dog {
+    func bark() {
+        print("woof woof")
+    }
+}
+
+let dog = Dog(name: "firulais")
+dog.bark()
+
 // Protocol Oriented Programming
 
 protocol Pet {

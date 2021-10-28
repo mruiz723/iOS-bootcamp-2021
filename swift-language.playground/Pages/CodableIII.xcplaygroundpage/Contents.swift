@@ -1,6 +1,8 @@
-//: [CodingKeys](@previous)
+//: [CodableII](@previous)
 
 import Foundation
+
+// Encode and Decode Manually
 
 struct Coordinate {
     var latitude: Double
@@ -60,4 +62,4 @@ let encoder = JSONEncoder()
 let dataEncoded = try encoder.encode(coordinate)
 let jsonString2 = String(data: dataEncoded, encoding: .utf8)
 
-//: [EncodingStrategy](@next)
+//: [CodableIV](@next)

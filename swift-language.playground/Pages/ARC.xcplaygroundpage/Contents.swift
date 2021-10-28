@@ -32,6 +32,7 @@ func example2() {
             
             print("Chair with \(self.person.name) is being initialized")
             
+            // capture list with unowned self do not retain self
             self.person.greetings = { [unowned self] in
                 return "Hi, my name is \(self.person.name)."
            }

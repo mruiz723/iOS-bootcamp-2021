@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'/>
+=======
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='ARC'/>
@@ -12,3 +15,4 @@
         <page name='CodableIV'/>
     </pages>
 </playground>
+>>>>>>> 8eee903 (Adding some code using in the first iOS Bootcamp.)

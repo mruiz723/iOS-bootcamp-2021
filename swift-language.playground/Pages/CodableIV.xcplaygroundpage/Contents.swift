@@ -1,6 +1,8 @@
-//: [Encoded&DecodedManually](@previous)
+//: [CodableIII](@previous)
 
 import Foundation
+
+// Encoding & DecodingStrategy
 
 let jsonString = """
 {
@@ -64,4 +66,6 @@ let encoder = JSONEncoder()
 encoder.keyEncodingStrategy = .convertToSnakeCase
 let dataEncoded = try encoder.encode(coordinate)
 let jsonString2 = String(data: dataEncoded, encoding: .utf8)
+
+//: [Concurrency](@next)
 

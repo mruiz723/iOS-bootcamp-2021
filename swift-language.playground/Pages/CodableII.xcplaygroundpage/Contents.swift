@@ -1,4 +1,8 @@
+//: [Codable](@previous)
+
 import Foundation
+
+// Choose Properties to Encode and Decode Using Coding Keys
 
 // CodingKeys
 struct Coordinate: Codable {
@@ -50,4 +54,4 @@ let data = Data(jsonString.utf8)
 let decoder = JSONDecoder()
 let coordinate = try decoder.decode(Landmark.self, from: data)
 
-//: [Encoded&DecodedManually](@next)
+//: [CodableIII](@next)

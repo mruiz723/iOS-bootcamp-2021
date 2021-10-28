@@ -2,7 +2,7 @@
 
 import Foundation
 
-// Extension
+// Extensions
 
 class Dog {
     let name: String

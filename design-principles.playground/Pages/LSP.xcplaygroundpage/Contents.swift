@@ -1,4 +1,4 @@
-//: [O](@previous)
+//: [OCP](@previous)
 
 import Foundation
 
@@ -34,4 +34,4 @@ func _makeNoise(animal: Cat) {
 
 _makeNoise(animal: Cat())
 
-//: [I](@next)
+//: [ISP](@next)

@@ -55,4 +55,4 @@ func averegeGradeOnGroup(students: [Student]) -> Double {
 
 let avarege = averegeGradeOnGroup(students: groupOfStudents)
 
-//: [O](@next)
+//: [OCP](@next)

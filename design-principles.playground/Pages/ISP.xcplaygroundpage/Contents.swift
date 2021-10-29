@@ -1,4 +1,4 @@
-//: [L](@previous)
+//: [LSP](@previous)
 
 import Foundation
 
@@ -39,4 +39,4 @@ struct FetchProfile: FetchProfileProtocol {
     }
 }
 
-//: [D](@next)
+//: [DIP](@next)

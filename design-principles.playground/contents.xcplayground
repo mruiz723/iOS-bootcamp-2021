@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='S'/>
-        <page name='O'/>
-        <page name='L'/>
-        <page name='I'/>
-        <page name='D'/>
+        <page name='SRP'/>
+        <page name='OCP'/>
+        <page name='LSP'/>
+        <page name='ISP'/>
+        <page name='DIP'/>
     </pages>
 </playground>

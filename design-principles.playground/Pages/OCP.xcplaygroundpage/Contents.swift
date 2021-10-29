@@ -1,4 +1,4 @@
-//: [S](@previous)
+//: [SRP](@previous)
 
 import Foundation
 
@@ -61,4 +61,4 @@ func totalAreaFor(shapes: [Shape]) -> Double {
 
 let area = totalAreaFor(shapes: [Rectangle(width: 10, height: 10), Circle(radius: 10)])
 
-//: [L](@next)
+//: [LSP](@next)

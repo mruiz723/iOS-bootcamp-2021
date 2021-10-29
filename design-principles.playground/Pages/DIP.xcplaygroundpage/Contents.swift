@@ -1,4 +1,4 @@
-//: [I](@previous)
+//: [ISP](@previous)
 
 import Foundation
 

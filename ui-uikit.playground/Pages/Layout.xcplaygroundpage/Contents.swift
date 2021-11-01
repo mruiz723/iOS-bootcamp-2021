@@ -1,6 +1,3 @@
-//: [Previous](@previous)
-//: [Next](@next)
-
 import PlaygroundSupport
 import UIKit
 

@@ -3,5 +3,6 @@
     <pages>
         <page name='Layout'/>
         <page name='Storyboard'/>
+        <page name='Components'/>
     </pages>
 </playground>

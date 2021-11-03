@@ -175,6 +175,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="qBu-T0-0A1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PB5-wD-pcT" firstAttribute="leading" secondItem="KN6-MG-YBv" secondAttribute="leading" id="WWo-VS-oMs"/>
@@ -227,6 +228,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="yGI-Uw-fSv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ng2-4I-1gp" firstAttribute="leading" secondItem="Exj-GO-JHU" secondAttribute="leading" id="EPx-2W-V0l"/>
@@ -284,6 +286,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="mUW-l9-itz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tq9-L4-qf8" firstAttribute="top" secondItem="yHL-cY-xzY" secondAttribute="top" id="HlG-IV-1Xz"/>

@@ -29,6 +29,11 @@ class TextFieldsViewController: UIViewController, UserModelHandler {
 
 extension  TextFieldsViewController: UITextFieldDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         updateUserModel()
         return true

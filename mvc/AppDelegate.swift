@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ui-components
+//  mvc
 //
 //  Created by Jorge Benavides on 01/11/21.
 //

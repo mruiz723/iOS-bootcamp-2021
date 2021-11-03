@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ui-components
+//  mvc
 //
 //  Created by Jorge Benavides on 01/11/21.
 //
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         scroll(to: pageControl.currentPage - 1)
     }
     
-    @IBAction func buttonPressed() {
+    @IBAction func nextButtonPressed() {
         scroll(to: pageControl.currentPage + 1)
     }
     

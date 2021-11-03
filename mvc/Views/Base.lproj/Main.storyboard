@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ui_components" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <stackView contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5jN-3u-IyM">
                                 <rect key="frame" x="30" y="74" width="354" height="788"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-VH-GmZ" customClass="CustomView" customModule="ui_components" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-VH-GmZ" customClass="CustomView" customModule="mvc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="727"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" id="y6O-50-wRN">
@@ -100,14 +100,14 @@
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusRatio">
                                                         <real key="value" value="12"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4Z-Lt-uiq"/>
+                                                    <action selector="nextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uao-m3-6P7"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -136,7 +136,7 @@
         <!--Text Fields View Controller-->
         <scene sceneID="UlT-QV-Psu">
             <objects>
-                <viewController id="eRu-Sv-Ofb" customClass="TextFieldsViewController" customModule="ui_components" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eRu-Sv-Ofb" customClass="TextFieldsViewController" customModule="mvc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KN6-MG-YBv">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +196,7 @@
         <!--Date Picker View Controller-->
         <scene sceneID="T1S-p1-mTi">
             <objects>
-                <viewController id="can-Ow-hyN" customClass="DatePickerViewController" customModule="ui_components" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="can-Ow-hyN" customClass="DatePickerViewController" customModule="mvc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Exj-GO-JHU">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
         <!--Table View Controller-->
         <scene sceneID="iJ3-E4-jTx">
             <objects>
-                <viewController id="Yrg-eH-CGD" customClass="TableViewController" customModule="ui_components" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yrg-eH-CGD" customClass="TableViewController" customModule="mvc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHL-cY-xzY">
                         <rect key="frame" x="0.0" y="0.0" width="354" height="757"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

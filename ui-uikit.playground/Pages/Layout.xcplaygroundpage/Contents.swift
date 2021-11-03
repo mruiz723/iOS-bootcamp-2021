@@ -20,7 +20,6 @@ let window = UIView(frame: CGRect(origin: .zero, size: windowSize))
 
 // CGRect
 
-//let square = UIView()
 let square = UIImageView()
 
 square.image = UIImage(named: "swift")

@@ -1,19 +1,17 @@
 import PlaygroundSupport
 import UIKit
 
-//    UIKit
-//    Construct and manage a graphical, event-driven user interface for your iOS or tvOS app.
-//
-//    The UIKit framework provides the required infrastructure for your iOS or tvOS apps.
-//    It provides the window and view architecture for implementing your interface,
-//    the event handling infrastructure for delivering Multi-Touch and other types of input to your app,
-//    and the main run loop needed to manage interactions among the user, the system, and your app.
-//    Other features offered by the framework include animation support, document support, drawing and printing support,
-//    information about the current device, text management and display, search support, accessibility support, app extension support, and resource management.
-//
-//    Note
-//    Use UIKit classes only from your app’s main thread or main dispatch queue, unless otherwise indicated. This restriction particularly applies to classes derived from UIResponder or that involve manipulating your app’s user interface in any way.
+//    Storyboard
+//    A storyboard is a visual representation of the user interface of an iOS application,
+//    showing screens of content and the connections between those screens.
+//    A storyboard is composed of a sequence of scenes, each of which represents
+//    a view controller and its views; scenes are connected by segue objects,
+//    which represent a transition between two view controllers.
 
+//    In addition, a storyboard enables you to connect a view to its controller object,
+//    and to manage the transfer of data between view controllers.
+
+let windowSize = CGSize(width: 320, height: 480)
 
 let storyboard = UIStoryboard(name: "Main", bundle: .main)
 
@@ -28,5 +26,5 @@ if
     tableViewController.tableView.dataSource = dataSource
 }
 
-rootViewController?.view.frame.size = CGSize(width: 320, height: 480)
+rootViewController?.view.frame.size = windowSize
 PlaygroundPage.current.liveView = rootViewController?.view

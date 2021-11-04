@@ -78,9 +78,9 @@ extension UsersViewController: UITableViewDelegate {
 //        navigationController?.pushViewController(detailUserVC, animated: true)
 
         // Constructor/Initalizer Injection
-//                performSegue(withIdentifier: "detailUserSegueAction", sender: user)
+                performSegue(withIdentifier: "detailUserSegueAction", sender: user)
 
         // Property Injection
-                performSegue(withIdentifier: "detailUser", sender: user)
+//                performSegue(withIdentifier: "detailUser", sender: user)
     }
 }

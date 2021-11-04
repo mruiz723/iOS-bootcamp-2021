@@ -65,11 +65,6 @@ class UsersViewController : UIViewController {
         namesLabel.text = users
     }
 
-    @objc
-    private func addUserTapped() {
-        print("Add new user")
-    }
-
     private func setupView() {
         view.backgroundColor = .white
         view.addSubview(namesLabel)

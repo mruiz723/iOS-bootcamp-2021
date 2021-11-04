@@ -23,7 +23,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNa-VH-GmZ" customClass="CustomView" customModule="mvc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="727"/>
                                         <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" id="y6O-50-wRN">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" id="y6O-50-wRN" customClass="ScrollView" customModule="mvc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="354" height="727"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
@@ -59,7 +59,7 @@
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="bou-90-jTl"/>
                                                 </connections>
                                             </scrollView>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pto-mR-eaT">
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Pto-mR-eaT">
                                                 <rect key="frame" x="99.5" y="671" width="155.5" height="26"/>
                                                 <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
                                                 <color key="currentPageIndicatorTintColor" systemColor="linkColor"/>

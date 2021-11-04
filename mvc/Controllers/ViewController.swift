@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     // The connections between the containing object and its outlets are reestablished every time the containing object is unarchived from its nib file.
     // The containing object holds an outlet declared as a property with the type qualifier of IBOutlet and a weak option.
     
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView: ScrollView!
     
     @IBOutlet weak var pageControl: UIPageControl!
     
@@ -54,23 +54,9 @@ extension ViewController {
     }
     
     func updateScrollView() {
-        guard let superview = scrollView.superview else { return }
         
-        superview.layoutIfNeeded()
+        scrollView.layoutIfNeeded()
         
-        guard superview.frame.size != scrollView.frame.size else { return }
-        
-        scrollView.frame = CGRect(origin: .zero, size: superview.frame.size)
-        
-        for (index, subview) in scrollView.subviews.enumerated() {
-            subview.frame.origin = CGPoint(x: scrollView.frame.size.width * CGFloat(index), y: 0)
-            subview.frame.size = CGSize(width: scrollView.frame.size.width, height: scrollView.frame.size.height)
-        }
-        
-        scrollView.contentSize = CGSize(width: scrollView.frame.size.width * CGFloat(scrollView.subviews.count), height: scrollView.frame.size.height)
-        scrollView.contentOffset.x = 0
-        pageControl.numberOfPages = scrollView.subviews.count
-        pageControl.currentPage = 0
     }
     
 

@@ -27,6 +27,7 @@ struct PokemonItem: Decodable {
         self.name = try container.decode(String.self, forKey: .name)
     }
 }
+
 struct PokemonList: Decodable {
 
     let results: [PokemonItem]

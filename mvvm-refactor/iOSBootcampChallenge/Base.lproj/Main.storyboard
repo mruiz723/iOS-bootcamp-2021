@@ -13,7 +13,7 @@
         <!--List View Controller-->
         <scene sceneID="UHa-zC-Pbp">
             <objects>
-                <collectionViewController id="D44-GL-Mmn" customClass="ListViewController" customModule="iOSBootcampChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="ListViewController" id="D44-GL-Mmn" customClass="ListViewController" customModule="iOSBootcampChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="hry-8A-i5A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

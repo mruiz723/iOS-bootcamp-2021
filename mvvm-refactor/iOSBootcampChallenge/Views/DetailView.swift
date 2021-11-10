@@ -21,7 +21,7 @@ struct DetailView {
 
     private weak var delegate: DetailViewDelegate?
 
-    init(viewModel: DetailViewModel, container: UIView, delegate: DetailViewDelegate) {
+    init(viewModel: DetailViewModel, container: UIView, delegate: DetailViewDelegate? = nil) {
         self.viewModel = viewModel
         self.container = container
         self.delegate = delegate
@@ -108,7 +108,7 @@ extension DetailView {
         return label
     }
 
-    private var idLabel: UILabel {
+    public var idLabel: UILabel {
         let label = UILabel()
         label.textAlignment = .right
         label.font = UIFont.boldSystemFont(ofSize: 23)

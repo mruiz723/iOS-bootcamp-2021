@@ -10,7 +10,7 @@ import XCTest
 class IOSBootcampChallengeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
-        true
+        false
     }
 
     override func setUpWithError() throws {
@@ -23,10 +23,23 @@ class IOSBootcampChallengeUITestsLaunchTests: XCTestCase {
 
         // Insert steps here to perform after app launch but before taking a screenshot,
         // such as logging into a test account or navigating somewhere in the app
+        app.navigationBars["Pokédex"].searchFields["Search a pokemon"].tap()
+
+        if app.navigationBars["Pokédex"].searchFields["Search a pokemon"].buttons["Clear text"].exists {
+            app.navigationBars["Pokédex"].searchFields["Search a pokemon"].buttons["Clear text"].tap()
+        }
+
+        app.keys["P"].tap()
+        app.keys["i"].tap()
+        app.keys["k"].tap()
+        app.keys["a"].tap()
+
+        app.collectionViews.cells.otherElements.containing(.staticText, identifier: " Electric ").element.tap()
 
         let attachment = XCTAttachment(screenshot: app.screenshot())
         attachment.name = "Launch Screen"
         attachment.lifetime = .keepAlways
         add(attachment)
+        app.terminate()
     }
 }

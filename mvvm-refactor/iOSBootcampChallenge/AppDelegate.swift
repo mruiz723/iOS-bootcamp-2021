@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // swiftlint:disable line_length
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if CommandLine.arguments.contains("--uitesting") {
+            let defaultsName = Bundle.main.bundleIdentifier!
+            UserDefaults.standard.removePersistentDomain(forName: defaultsName)
+        }
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         return true

@@ -36,6 +36,22 @@ struct Pokemon: Decodable, Equatable {
     let weight: Float
     let baseExperience: Int
 
+    init(id: Int,
+         name: String,
+         image: String?,
+         types: [String]?,
+         abilities: [String]?,
+         weight: Float,
+         baseExperience: Int) {
+        self.id = id
+        self.name = name
+        self.image = image
+        self.types = types
+        self.abilities = abilities
+        self.weight = weight
+        self.baseExperience = baseExperience
+    }
+
     enum CodingKeys: String, CodingKey {
         case id
         case name

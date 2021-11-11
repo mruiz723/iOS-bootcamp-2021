@@ -43,6 +43,6 @@ class PokeModelTests: XCTestCase {
         // Wait for the expectation to be fullfilled, or time out
         // after 5 seconds. This is where the test runner will pause.
         waitForExpectations(timeout: 10, handler: nil)
-        XCTAssertEqual(pokemons.count, count)
+        XCTAssertEqual(pokemons.count, count, "is not working")
     }
 }

@@ -14,8 +14,9 @@ public class ViewModel {
     }
 
     // Intents
-    func getTodo(at indexPath: IndexPath) -> Todo {
-        model.list[indexPath.row]
+    func getTodo(at indexPath: IndexPath) -> TodoElement {
+        let todo = model.list[indexPath.row]
+        return TodoElement(name: "Todo: \(todo.id)", isCompleted: todo.isDone)
     }
 
     func didToggleTodosSwitch(index: Int) {

@@ -27,7 +27,7 @@ class DetailViewTests: XCTestCase {
         let detailView = DetailView(viewModel: viewModel, container: view)
 
         XCTAssertNotNil(detailView.body)
-        XCTAssertEqual(detailView.idLabel.text, "#132")
+        XCTAssertEqual(detailView.idLabel.text, "#132", "something is wrong with the pokemon")
     }
 
 }

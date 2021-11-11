@@ -1,0 +1,12 @@
+line_length: 180
+
+identifier_name:
+  excluded: # excluded via string array
+    - id
+    - URL
+    - ok
+  reporter: "xcode"
+
+disabled_rules:
+ - trailing_whitespace
+ - nesting

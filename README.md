@@ -15,8 +15,16 @@ Recording:
 **Dependency Injection, UI (UIKit), Architecture MVC**
 
 Presentation:
-- https://docs.google.com/presentation/d/14m__tgDVZ-MH5zcVhzY_-RgpCzCB6VmBZDhD6fEqSI8/edit
+- https://docs.google.com/presentation/d/14m__tgDVZ-MH5zcVhzY_-RgpCzCB6VmBZDhD6fEqSI8/view
 
 Recording:
 - https://drive.google.com/file/d/1e4tCAUkfWurtkEIT3Nqh9rkC3mWhOQUA/view
 
+### Session 3
+**Architecture MVP, MVVM, VIP, Unit test**
+
+Presentation:
+- https://docs.google.com/presentation/d/18hGfQkq0W6rwN7ihJ9HRDW1VOIzWKC4Jkc3LGgCOyvQ/view
+
+Recording:
+- https://drive.google.com/file/d/1g1H9Cu5h7wmAUfB3nKMKf4U2YIJJM3Do/view

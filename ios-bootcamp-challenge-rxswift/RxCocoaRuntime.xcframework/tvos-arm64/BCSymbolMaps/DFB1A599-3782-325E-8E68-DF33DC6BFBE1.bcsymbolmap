@@ -1,0 +1,776 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.5 (clang-1205.0.22.9)
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS14.5.sdk
+AppleTVOS14.5.sdk
+/Users/shaimishali/Work/OSS/RxSwift/Sources/RxCocoaRuntime/_RX.m
+/Users/shaimishali/Work/OSS/RxSwift
++[_RXDelegateProxy collectVoidSelectorsForProtocol:]
++[_RXDelegateProxy initialize]
+-[_RXDelegateProxy _forwardToDelegate]
+-[_RXDelegateProxy _setForwardToDelegate:retainDelegate:]
+-[_RXDelegateProxy hasWiredImplementationForSelector:]
+-[_RXDelegateProxy voidDelegateMethodsContain:]
+-[_RXDelegateProxy forwardInvocation:]
+-[_RXDelegateProxy _sentMessage:withArguments:]
+-[_RXDelegateProxy _methodInvoked:withArguments:]
+-[_RXDelegateProxy dealloc]
+-[_RXDelegateProxy strongForwardDelegate]
+-[_RXDelegateProxy setStrongForwardDelegate:]
+-[_RXDelegateProxy .cxx_destruct]
+_voidSelectorsPerClass
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_CLASSLIST_REFERENCES_$_.1
+_OBJC_SELECTOR_REFERENCES_.3
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_CLASSLIST_REFERENCES_$_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+__OBJC_$_CLASS_METHODS__RXDelegateProxy
+__OBJC_METACLASS_RO_$__RXDelegateProxy
+__OBJC_$_INSTANCE_METHODS__RXDelegateProxy
+_OBJC_IVAR_$__RXDelegateProxy.__forwardToDelegate
+_OBJC_IVAR_$__RXDelegateProxy._strongForwardDelegate
+__OBJC_$_INSTANCE_VARIABLES__RXDelegateProxy
+__OBJC_$_PROP_LIST__RXDelegateProxy
+__OBJC_CLASS_RO_$__RXDelegateProxy
+/Users/shaimishali/Work/OSS/RxSwift/Sources/RxCocoaRuntime/_RXDelegateProxy.m
+Sources/RxCocoaRuntime/_RXDelegateProxy.m
+-[_RXKVOObserver initWithTarget:retainTarget:keyPath:options:callback:]
+-[_RXKVOObserver observeValueForKeyPath:ofObject:change:context:]
+-[_RXKVOObserver dispose]
+-[_RXKVOObserver target]
+-[_RXKVOObserver setTarget:]
+-[_RXKVOObserver retainedTarget]
+-[_RXKVOObserver setRetainedTarget:]
+-[_RXKVOObserver keyPath]
+-[_RXKVOObserver setKeyPath:]
+-[_RXKVOObserver callback]
+-[_RXKVOObserver setCallback:]
+-[_RXKVOObserver .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+__OBJC_METACLASS_RO_$__RXKVOObserver
+__OBJC_$_INSTANCE_METHODS__RXKVOObserver
+_OBJC_IVAR_$__RXKVOObserver._target
+_OBJC_IVAR_$__RXKVOObserver._retainedTarget
+_OBJC_IVAR_$__RXKVOObserver._keyPath
+_OBJC_IVAR_$__RXKVOObserver._callback
+__OBJC_$_INSTANCE_VARIABLES__RXKVOObserver
+__OBJC_$_PROP_LIST__RXKVOObserver
+__OBJC_CLASS_RO_$__RXKVOObserver
+/Users/shaimishali/Work/OSS/RxSwift/Sources/RxCocoaRuntime/_RXKVOObserver.m
+Sources/RxCocoaRuntime/_RXKVOObserver.m
+___RX_ensure_observing_block_invoke
+___copy_helper_block_e8_32s40r
+___destroy_helper_block_e8_32s40r
+-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]
+___71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke
+___71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke_2
+_RX_forward_invocation
+___71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke_3
+___71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke_4
+___copy_helper_block_e8_32r
+___destroy_helper_block_e8_32r
+-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]
+___72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke
+___72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke_2
+_RX_responds_to_selector
+___72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke_3
+___72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke_4
+-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]
+___67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke
+___67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke_2
+___67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke_3
+___67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke_4
+-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]
+___80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke
+___80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke_2
+_RX_method_signature
+___80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke_3
+___80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke_4
+-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]
+___66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke
+___66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke_2
+___66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke.123
+___66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke_2.124
+___copy_helper_block_e8_32r40r
+___destroy_helper_block_e8_32r40r
++[RXObjCRuntime(swizzle) example_void]
+-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]
+___54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke
+___54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke_2
+___54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke_3
+___54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke_4
++[RXObjCRuntime(swizzle) example_void_id:]
+-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]
+___57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke
+___57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke_2
+___57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke.142
+___57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke_2.143
++[RXObjCRuntime(swizzle) example_void_char:]
+-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]
+___59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke
+___59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke_2
+___59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke.146
+___59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke_2.147
++[RXObjCRuntime(swizzle) example_void_short:]
+-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]
+___60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke
+___60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke_2
+___60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke.150
+___60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke_2.151
++[RXObjCRuntime(swizzle) example_void_int:]
+-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]
+___58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke
+___58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke_2
+___58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke.154
+___58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke_2.155
++[RXObjCRuntime(swizzle) example_void_long:]
+-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]
+___59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke
+___59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke_2
+___59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke.158
+___59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke_2.159
++[RXObjCRuntime(swizzle) example_void_rx_uchar:]
+-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke_2
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke.162
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke_2.163
++[RXObjCRuntime(swizzle) example_void_rx_ushort:]
+-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]
+___64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke
+___64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke_2
+___64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke.166
+___64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke_2.167
++[RXObjCRuntime(swizzle) example_void_rx_uint:]
+-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]
+___62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke
+___62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke_2
+___62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke.170
+___62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke_2.171
++[RXObjCRuntime(swizzle) example_void_rx_ulong:]
+-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke_2
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke.174
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke_2.175
++[RXObjCRuntime(swizzle) example_void_rx_block:]
+-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke_2
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke.178
+___63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke_2.179
++[RXObjCRuntime(swizzle) example_void_float:]
+-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]
+___60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke
+___60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke_2
+___60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke.182
+___60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke_2.183
++[RXObjCRuntime(swizzle) example_void_double:]
+-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]
+___61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke
+___61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke_2
+___61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke.186
+___61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke_2.187
++[RXObjCRuntime(swizzle) example_void_SEL:]
+-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]
+___58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke
+___58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke_2
+___58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke.192
+___58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke_2.193
++[RXObjCRuntime(swizzle) example_void_id:_id:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]
+___60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke
+___60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke_2
+___60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke.196
+___60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke_2.197
++[RXObjCRuntime(swizzle) example_void_id:_char:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke_2
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke.200
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke_2.201
++[RXObjCRuntime(swizzle) example_void_id:_short:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke_2
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke.204
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke_2.205
++[RXObjCRuntime(swizzle) example_void_id:_int:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke_2
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke.208
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke_2.209
++[RXObjCRuntime(swizzle) example_void_id:_long:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke_2
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke.212
+___62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke_2.213
++[RXObjCRuntime(swizzle) example_void_id:_rx_uchar:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke_2
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke.216
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke_2.217
++[RXObjCRuntime(swizzle) example_void_id:_rx_ushort:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]
+___67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke
+___67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke_2
+___67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke.220
+___67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke_2.221
++[RXObjCRuntime(swizzle) example_void_id:_rx_uint:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]
+___65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke
+___65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke_2
+___65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke.224
+___65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke_2.225
++[RXObjCRuntime(swizzle) example_void_id:_rx_ulong:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke_2
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke.228
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke_2.229
++[RXObjCRuntime(swizzle) example_void_id:_rx_block:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke_2
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke.232
+___66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke_2.233
++[RXObjCRuntime(swizzle) example_void_id:_float:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke_2
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke.236
+___63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke_2.237
++[RXObjCRuntime(swizzle) example_void_id:_double:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]
+___64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke
+___64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke_2
+___64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke.240
+___64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke_2.241
++[RXObjCRuntime(swizzle) example_void_id:_SEL:]
+-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke_2
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke.244
+___61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke_2.245
++[RXObjCRuntime(swizzle) load]
+___30+[RXObjCRuntime(swizzle) load]_block_invoke
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_2
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_3
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_4
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_5
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_6
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_7
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_8
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_9
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_10
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_11
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_12
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_13
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_14
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_15
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_16
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_17
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_18
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_19
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_20
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_21
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_22
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_23
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_24
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_25
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_26
+___30+[RXObjCRuntime(swizzle) load]_block_invoke_27
++[RXObjCRuntime instance]
++[RXObjCRuntime initialize]
+-[RXObjCRuntime init]
+-[RXObjCRuntime performLocked:]
++[RXObjCRuntime registerOptimizedObserver:encodedAs:]
+_RX_method_encoding
+-[RXObjCRuntime ensurePrepared:forObserving:error:]
+-[RXObjCRuntime prepareTargetClassForObserving:error:]
+-[RXObjCRuntime forwardingSelector:forClass:]
+-[RXObjCRuntime registerForwardedSelector:forClass:]
+-[RXObjCRuntime observeByForwardingMessages:selector:target:error:]
+-[RXObjCRuntime ensureHasDynamicFakeSubclass:error:]
+-[RXObjCRuntime ensureForwardingMethodsAreSwizzled:error:]
+-[RXObjCRuntime registerInterceptedSelector:implementation:forClass:]
+-[RXObjCRuntime interceptorImplementationForSelector:forClass:]
+-[RXObjCRuntime ensureSwizzledSelector:ofClass:newImplementationGenerator:replacementImplementationGenerator:error:]
+-[RXObjCRuntime lock]
+-[RXObjCRuntime setLock:]
+-[RXObjCRuntime classesThatSupportObservingByForwarding]
+-[RXObjCRuntime setClassesThatSupportObservingByForwarding:]
+-[RXObjCRuntime forwardedSelectorsByClass]
+-[RXObjCRuntime setForwardedSelectorsByClass:]
+-[RXObjCRuntime dynamicSubclassByRealClass]
+-[RXObjCRuntime setDynamicSubclassByRealClass:]
+-[RXObjCRuntime interceptorIMPbySelectorsByClass]
+-[RXObjCRuntime setInterceptorIMPbySelectorsByClass:]
+-[RXObjCRuntime .cxx_destruct]
+_supported_types
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_CLASSLIST_REFERENCES_$_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_CLASSLIST_REFERENCES_$_.69
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_CLASSLIST_REFERENCES_$_.76
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_CLASSLIST_REFERENCES_$_.86
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_SELECTOR_REFERENCES_.90
+___block_descriptor_64_e8_32s40r_e23_v16?0"RXObjCRuntime"8l
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.95
+___block_descriptor_48_e25_v24?08"NSInvocation"16lu32l8
+___block_descriptor_48_e6_^?8?0lu32l8
+___block_descriptor_48_e8_32r_e25_v24?08"NSInvocation"16l
+___block_descriptor_40_e10_^?16?0^?8l
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_SELECTOR_REFERENCES_.104
+___block_descriptor_48_e11_B24?08:16lu32l8
+___block_descriptor_48_e8_32r_e11_B24?08:16l
+___block_descriptor_56_e8_#16?08lu32l8u40l8
+___block_descriptor_56_e6_^?8?0lu32l8u40l8
+___block_descriptor_56_e8_32r_e8_#16?08lu40l8
+___block_descriptor_48_e10_^?16?0^?8lu32l8
+_OBJC_SELECTOR_REFERENCES_.113
+___block_descriptor_48_e30_"NSMethodSignature"24?08:16lu32l8
+___block_descriptor_48_e8_32r_e30_"NSMethodSignature"24?08:16l
+_deallocSelector
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.119
+___block_descriptor_64_e8_32r_e8_v16?08lu48l8
+___block_descriptor_56_e6_^?8?0lu40l8
+___block_descriptor_64_e8_32r40r_e8_v16?08l
+___block_descriptor_48_e10_^?16?0^?8l
+__OBJC_$_CATEGORY_INSTANCE_METHODS_RXObjCRuntime_$_InfrastructureMethods
+__OBJC_$_CATEGORY_RXObjCRuntime_$_InfrastructureMethods
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_CLASSLIST_REFERENCES_$_.137
+_OBJC_SELECTOR_REFERENCES_.139
+___block_descriptor_64_e8_32r_e11_v24?0816lu48l8
+___block_descriptor_64_e8_32r40r_e11_v24?0816l
+___block_descriptor_64_e8_32r_e11_v20?08c16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08c16l
+___block_descriptor_64_e8_32r_e11_v20?08s16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08s16l
+___block_descriptor_64_e8_32r_e11_v20?08i16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08i16l
+___block_descriptor_64_e8_32r_e11_v24?08q16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v24?08q16l
+___block_descriptor_64_e8_32r_e11_v20?08C16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08C16l
+___block_descriptor_64_e8_32r_e11_v20?08S16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08S16l
+___block_descriptor_64_e8_32r_e11_v20?08I16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08I16l
+___block_descriptor_64_e8_32r_e11_v24?08Q16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v24?08Q16l
+___block_descriptor_64_e8_32r_e18_v24?08?<?>16lu48l8
+___block_descriptor_64_e8_32r40r_e18_v24?08?<?>16l
+___block_descriptor_64_e8_32r_e11_v20?08f16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v20?08f16l
+___block_descriptor_64_e8_32r_e11_v24?08d16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v24?08d16l
+_OBJC_SELECTOR_REFERENCES_.189
+___block_descriptor_64_e8_32r_e11_v24?08:16lu48l8
+___block_descriptor_64_e8_32r40r_e11_v24?08:16l
+___block_descriptor_64_e8_32r_e14_v32?081624lu48l8
+___block_descriptor_64_e8_32r40r_e14_v32?081624l
+___block_descriptor_64_e8_32r_e14_v28?0816c24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816c24l
+___block_descriptor_64_e8_32r_e14_v28?0816s24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816s24l
+___block_descriptor_64_e8_32r_e14_v28?0816i24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816i24l
+___block_descriptor_64_e8_32r_e14_v32?0816q24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v32?0816q24l
+___block_descriptor_64_e8_32r_e14_v28?0816C24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816C24l
+___block_descriptor_64_e8_32r_e14_v28?0816S24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816S24l
+___block_descriptor_64_e8_32r_e14_v28?0816I24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816I24l
+___block_descriptor_64_e8_32r_e14_v32?0816Q24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v32?0816Q24l
+___block_descriptor_64_e8_32r_e21_v32?0816?<?>24lu48l8
+___block_descriptor_64_e8_32r40r_e21_v32?0816?<?>24l
+___block_descriptor_64_e8_32r_e14_v28?0816f24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v28?0816f24l
+___block_descriptor_64_e8_32r_e14_v32?0816d24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v32?0816d24l
+___block_descriptor_64_e8_32r_e14_v32?0816:24lu48l8
+___block_descriptor_64_e8_32r40r_e14_v32?0816:24l
+_OBJC_SELECTOR_REFERENCES_.247
+___block_descriptor_32_e33_B40?0"RXObjCRuntime"8#16:24^32l
+___block_literal_global
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.252
+_OBJC_SELECTOR_REFERENCES_.254
+___block_literal_global.255
+_OBJC_SELECTOR_REFERENCES_.257
+_OBJC_SELECTOR_REFERENCES_.259
+___block_literal_global.260
+_OBJC_SELECTOR_REFERENCES_.262
+_OBJC_SELECTOR_REFERENCES_.264
+___block_literal_global.265
+_OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.269
+___block_literal_global.270
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_SELECTOR_REFERENCES_.274
+___block_literal_global.275
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.279
+___block_literal_global.280
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.284
+___block_literal_global.285
+_OBJC_SELECTOR_REFERENCES_.287
+_OBJC_SELECTOR_REFERENCES_.289
+___block_literal_global.290
+_OBJC_SELECTOR_REFERENCES_.292
+_OBJC_SELECTOR_REFERENCES_.294
+___block_literal_global.295
+_OBJC_SELECTOR_REFERENCES_.297
+_OBJC_SELECTOR_REFERENCES_.299
+___block_literal_global.300
+_OBJC_SELECTOR_REFERENCES_.302
+_OBJC_SELECTOR_REFERENCES_.304
+___block_literal_global.305
+_OBJC_SELECTOR_REFERENCES_.307
+_OBJC_SELECTOR_REFERENCES_.309
+___block_literal_global.310
+_OBJC_SELECTOR_REFERENCES_.312
+_OBJC_SELECTOR_REFERENCES_.314
+___block_literal_global.315
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.319
+___block_literal_global.320
+_OBJC_SELECTOR_REFERENCES_.322
+_OBJC_SELECTOR_REFERENCES_.324
+___block_literal_global.325
+_OBJC_SELECTOR_REFERENCES_.327
+_OBJC_SELECTOR_REFERENCES_.329
+___block_literal_global.330
+_OBJC_SELECTOR_REFERENCES_.332
+_OBJC_SELECTOR_REFERENCES_.334
+___block_literal_global.335
+_OBJC_SELECTOR_REFERENCES_.337
+_OBJC_SELECTOR_REFERENCES_.339
+___block_literal_global.340
+_OBJC_SELECTOR_REFERENCES_.342
+_OBJC_SELECTOR_REFERENCES_.344
+___block_literal_global.345
+_OBJC_SELECTOR_REFERENCES_.347
+_OBJC_SELECTOR_REFERENCES_.349
+___block_literal_global.350
+_OBJC_SELECTOR_REFERENCES_.352
+_OBJC_SELECTOR_REFERENCES_.354
+___block_literal_global.355
+_OBJC_SELECTOR_REFERENCES_.357
+_OBJC_SELECTOR_REFERENCES_.359
+___block_literal_global.360
+_OBJC_SELECTOR_REFERENCES_.362
+_OBJC_SELECTOR_REFERENCES_.364
+___block_literal_global.365
+_OBJC_SELECTOR_REFERENCES_.367
+_OBJC_SELECTOR_REFERENCES_.369
+___block_literal_global.370
+_OBJC_SELECTOR_REFERENCES_.372
+_OBJC_SELECTOR_REFERENCES_.374
+___block_literal_global.375
+_OBJC_SELECTOR_REFERENCES_.377
+_OBJC_SELECTOR_REFERENCES_.379
+___block_literal_global.380
+_OBJC_SELECTOR_REFERENCES_.382
+__OBJC_$_CATEGORY_INSTANCE_METHODS_RXObjCRuntime_$_swizzle
+__OBJC_$_CATEGORY_CLASS_METHODS_RXObjCRuntime_$_swizzle
+__OBJC_$_CATEGORY_RXObjCRuntime_$_swizzle
+__instance
+_optimizedObserversByMethodEncoding
+_OBJC_SELECTOR_REFERENCES_.414
+_defaultTypeID
+_OBJC_SELECTOR_REFERENCES_.420
+_OBJC_CLASSLIST_REFERENCES_$_.421
+_OBJC_SELECTOR_REFERENCES_.423
+_OBJC_SELECTOR_REFERENCES_.425
+_OBJC_CLASSLIST_REFERENCES_$_.426
+_OBJC_SELECTOR_REFERENCES_.428
+_OBJC_SELECTOR_REFERENCES_.430
+_OBJC_SELECTOR_REFERENCES_.432
+_OBJC_SELECTOR_REFERENCES_.434
+_OBJC_CLASSLIST_REFERENCES_$_.435
+_OBJC_SELECTOR_REFERENCES_.443
+_OBJC_SELECTOR_REFERENCES_.445
+_OBJC_SELECTOR_REFERENCES_.449
+_OBJC_CLASSLIST_REFERENCES_$_.450
+_OBJC_SELECTOR_REFERENCES_.452
+_OBJC_SELECTOR_REFERENCES_.454
+_OBJC_SELECTOR_REFERENCES_.456
+_OBJC_SELECTOR_REFERENCES_.457
+_OBJC_SELECTOR_REFERENCES_.459
+_OBJC_SELECTOR_REFERENCES_.461
+_OBJC_SELECTOR_REFERENCES_.463
+_RxSwizzlingTargetClassKey
+_OBJC_CLASSLIST_REFERENCES_$_.466
+_OBJC_SELECTOR_REFERENCES_.468
+_OBJC_SELECTOR_REFERENCES_.470
+_OBJC_SELECTOR_REFERENCES_.474
+_OBJC_SELECTOR_REFERENCES_.476
+_OBJC_SELECTOR_REFERENCES_.478
+_OBJC_SELECTOR_REFERENCES_.480
+_OBJC_CLASSLIST_REFERENCES_$_.487
+_OBJC_SELECTOR_REFERENCES_.489
+_OBJC_SELECTOR_REFERENCES_.493
+_OBJC_SELECTOR_REFERENCES_.495
+_OBJC_SELECTOR_REFERENCES_.497
+_OBJC_SELECTOR_REFERENCES_.500
+_OBJC_SELECTOR_REFERENCES_.502
+_OBJC_SELECTOR_REFERENCES_.506
+_OBJC_SELECTOR_REFERENCES_.507
+_OBJC_SELECTOR_REFERENCES_.508
+_OBJC_SELECTOR_REFERENCES_.509
+_OBJC_SELECTOR_REFERENCES_.511
+_OBJC_SELECTOR_REFERENCES_.515
+_OBJC_SELECTOR_REFERENCES_.521
+__OBJC_$_CLASS_METHODS_RXObjCRuntime
+__OBJC_METACLASS_RO_$_RXObjCRuntime
+__OBJC_$_INSTANCE_METHODS_RXObjCRuntime
+_OBJC_IVAR_$_RXObjCRuntime._classesThatSupportObservingByForwarding
+_OBJC_IVAR_$_RXObjCRuntime._forwardedSelectorsByClass
+_OBJC_IVAR_$_RXObjCRuntime._dynamicSubclassByRealClass
+_OBJC_IVAR_$_RXObjCRuntime._interceptorIMPbySelectorsByClass
+_OBJC_IVAR_$_RXObjCRuntime._lock
+__OBJC_$_INSTANCE_VARIABLES_RXObjCRuntime
+__OBJC_$_PROP_LIST_RXObjCRuntime
+__OBJC_CLASS_RO_$_RXObjCRuntime
+_OBJC_SELECTOR_REFERENCES_.561
+_OBJC_SELECTOR_REFERENCES_.563
+_OBJC_SELECTOR_REFERENCES_.565
+_OBJC_SELECTOR_REFERENCES_.567
+/Users/shaimishali/Work/OSS/RxSwift/Sources/RxCocoaRuntime/_RXObjCRuntime.m
+Sources/RxCocoaRuntime/_RXObjCRuntime.m
+RX_method_has_supported_return_type
+RX_method_encoding
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_27
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_26
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_25
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_24
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_23
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_22
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_21
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_20
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_19
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_18
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_17
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_16
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_15
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_14
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_13
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_12
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_11
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_10
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_9
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_8
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_7
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_6
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_5
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_4
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_3
+__30+[RXObjCRuntime(swizzle) load]_block_invoke_2
+__30+[RXObjCRuntime(swizzle) load]_block_invoke
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke_2.245
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke.244
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke_2
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_SEL:selector:error:]_block_invoke
+__64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke_2.241
+__64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke.240
+__64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke_2
+__64-[RXObjCRuntime(swizzle) swizzle_void_id_double:selector:error:]_block_invoke
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke_2.237
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke.236
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke_2
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_float:selector:error:]_block_invoke
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke_2.233
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke.232
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke_2
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_block:selector:error:]_block_invoke
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke_2.229
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke.228
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke_2
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ulong:selector:error:]_block_invoke
+__65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke_2.225
+__65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke.224
+__65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke_2
+__65-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uint:selector:error:]_block_invoke
+__67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke_2.221
+__67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke.220
+__67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke_2
+__67-[RXObjCRuntime(swizzle) swizzle_void_id_rx_ushort:selector:error:]_block_invoke
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke_2.217
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke.216
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke_2
+__66-[RXObjCRuntime(swizzle) swizzle_void_id_rx_uchar:selector:error:]_block_invoke
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke_2.213
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke.212
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke_2
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_long:selector:error:]_block_invoke
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke_2.209
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke.208
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke_2
+__61-[RXObjCRuntime(swizzle) swizzle_void_id_int:selector:error:]_block_invoke
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke_2.205
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke.204
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke_2
+__63-[RXObjCRuntime(swizzle) swizzle_void_id_short:selector:error:]_block_invoke
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke_2.201
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke.200
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke_2
+__62-[RXObjCRuntime(swizzle) swizzle_void_id_char:selector:error:]_block_invoke
+__60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke_2.197
+__60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke.196
+__60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke_2
+__60-[RXObjCRuntime(swizzle) swizzle_void_id_id:selector:error:]_block_invoke
+__58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke_2.193
+__58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke.192
+__58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke_2
+__58-[RXObjCRuntime(swizzle) swizzle_void_SEL:selector:error:]_block_invoke
+__61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke_2.187
+__61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke.186
+__61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke_2
+__61-[RXObjCRuntime(swizzle) swizzle_void_double:selector:error:]_block_invoke
+__60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke_2.183
+__60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke.182
+__60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke_2
+__60-[RXObjCRuntime(swizzle) swizzle_void_float:selector:error:]_block_invoke
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke_2.179
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke.178
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke_2
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_block:selector:error:]_block_invoke
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke_2.175
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke.174
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke_2
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_ulong:selector:error:]_block_invoke
+__62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke_2.171
+__62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke.170
+__62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke_2
+__62-[RXObjCRuntime(swizzle) swizzle_void_rx_uint:selector:error:]_block_invoke
+__64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke_2.167
+__64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke.166
+__64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke_2
+__64-[RXObjCRuntime(swizzle) swizzle_void_rx_ushort:selector:error:]_block_invoke
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke_2.163
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke.162
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke_2
+__63-[RXObjCRuntime(swizzle) swizzle_void_rx_uchar:selector:error:]_block_invoke
+__59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke_2.159
+__59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke.158
+__59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke_2
+__59-[RXObjCRuntime(swizzle) swizzle_void_long:selector:error:]_block_invoke
+__58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke_2.155
+__58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke.154
+__58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke_2
+__58-[RXObjCRuntime(swizzle) swizzle_void_int:selector:error:]_block_invoke
+__60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke_2.151
+__60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke.150
+__60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke_2
+__60-[RXObjCRuntime(swizzle) swizzle_void_short:selector:error:]_block_invoke
+__59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke_2.147
+__59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke.146
+__59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke_2
+__59-[RXObjCRuntime(swizzle) swizzle_void_char:selector:error:]_block_invoke
+__57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke_2.143
+__57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke.142
+__57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke_2
+__57-[RXObjCRuntime(swizzle) swizzle_void_id:selector:error:]_block_invoke
+__54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke_4
+__54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke_3
+__54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke_2
+__54-[RXObjCRuntime(swizzle) swizzle_void:selector:error:]_block_invoke
+__destroy_helper_block_e8_32r40r
+__copy_helper_block_e8_32r40r
+__66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke_2.124
+__66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke.123
+__66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke_2
+__66-[RXObjCRuntime(InfrastructureMethods) swizzleDeallocating:error:]_block_invoke
+__80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke_4
+__80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke_3
+RX_method_signature
+__80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke_2
+__80-[RXObjCRuntime(InfrastructureMethods) swizzleMethodSignatureForSelector:error:]_block_invoke
+__67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke_4
+__67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke_3
+__67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke_2
+__67-[RXObjCRuntime(InfrastructureMethods) swizzleClass:toActAs:error:]_block_invoke
+__72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke_4
+__72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke_3
+RX_responds_to_selector
+__72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke_2
+__72-[RXObjCRuntime(InfrastructureMethods) swizzleRespondsToSelector:error:]_block_invoke
+__destroy_helper_block_e8_32r
+__copy_helper_block_e8_32r
+__71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke_4
+__71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke_3
+RX_forward_invocation
+__71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke_2
+__71-[RXObjCRuntime(InfrastructureMethods) swizzleForwardInvocation:error:]_block_invoke
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32s40r
+__RX_ensure_observing_block_invoke
+RX_ensure_observing
+RX_reference_from_selector
+RX_default_target_implementation
+RX_extract_arguments
+RX_extract_argument_at_index
+RX_is_method_with_description_void
+RX_is_method_signature_void
+RX_selector
+RX_return_type_is_supported

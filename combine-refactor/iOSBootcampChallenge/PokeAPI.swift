@@ -6,42 +6,39 @@
 //
 
 import Foundation
+import Combine
 
 class PokeAPI {
 
     static let shared = PokeAPI()
-    static let baseURL = "https://pokeapi.co/api/v2/"
+    static let baseURL = "https://pokeapi.co/api/v2"
 
     @discardableResult
-    func get<T: Decodable>(url: String, onCompletion: @escaping(T?, Error?) -> Void) -> URLSessionDataTask? {
+    func get<T: Decodable>(url: String) -> Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, T, JSONDecoder>? {
         let path = url.replacingOccurrences(of: PokeAPI.baseURL, with: "")
-        let task = URLSession.shared.dataTask(with: PokeAPI.baseURL + path, completionHandler: { data, _, error in
-            guard let data = data else {
-                onCompletion(nil, error)
-                return
+        let publisher = URLSession.shared.dataTaskPublisher(with: PokeAPI.baseURL + path)?
+            .tryMap { element -> Data in
+                guard let httpResponse = element.response as? HTTPURLResponse,
+                    httpResponse.statusCode == 200 else {
+                        throw URLError(.badServerResponse)
+                    }
+                return element.data
             }
-            do {
-                let entity = try JSONDecoder().decode(T.self, from: data)
-                onCompletion(entity, error)
-            } catch {
-                onCompletion(nil, error)
-            }
-        })
-        task?.resume()
-        return task
+            .decode(type: T.self, decoder: JSONDecoder())
+        return publisher
     }
 
 }
 
 extension URLSession {
 
-    func dataTask(with url: String, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask? {
+    func dataTaskPublisher(with url: String) -> URLSession.DataTaskPublisher? {
         guard let url = URL(string: url) else { return nil }
-        return self.dataTask(with: URLRequest(url: url), completionHandler: completionHandler)
+        return self.dataTaskPublisher(with: url)
     }
 
-    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
-        return self.dataTask(with: URLRequest(url: url), completionHandler: completionHandler)
+    func dataTaskPublisher(with url: URL) -> URLSession.DataTaskPublisher {
+        return self.dataTaskPublisher(for: URLRequest(url: url))
     }
 
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 struct PokeModel {
 
@@ -15,34 +16,26 @@ struct PokeModel {
         self.api = api
     }
 
-    func getListOfPokemons(limit: Int, completion: @escaping (([Pokemon]) -> Void)) {
-        var pokemons: [Pokemon] = []
+    func getListOfPokemons(limit: Int) -> AnyPublisher<[Pokemon], Error>? // Publishers.Collect<Publishers.FlatMap<Publishers.Sequence<[Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>], Never>.Output, Publishers.FlatMap<Publishers.SetFailureType<Publishers.Sequence<[Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>], Never>, Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, PokemonList, JSONDecoder>.Failure>, Publishers.Map<Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, PokemonList, JSONDecoder>, [Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>]>>>>
+    {
 
-        let group = DispatchGroup()
+        guard
+            let serialPublisher: Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, PokemonList, JSONDecoder> = self.api.get(url: "/pokemon?limit=\(limit)")
+        else { return nil }
 
-        group.enter()
-        self.api.get(url: "pokemon?limit=\(limit)", onCompletion: { (list: PokemonList?, _) in
-            guard let list = list else {
-                group.leave()
-                return
+        let colletion = serialPublisher
+            .map { (list: PokemonList) -> [Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>] in
+                list.results.compactMap {
+                    self.api.get(url: "/pokemon/\($0.id)/")
+                }
             }
-            list.results.forEach { result in
-                group.enter()
-                self.api.get(url: "/pokemon/\(result.id)/", onCompletion: { (pokemon: Pokemon?, _) in
-                    guard let pokemon = pokemon else {
-                        group.leave()
-                        return
-                    }
-                    pokemons.append(pokemon)
-                    group.leave()
-                })
+            .flatMap { publishers in
+                publishers.publisher
             }
-            group.leave()
-        })
+            .flatMap { $0 }
+            .collect()
 
-        group.notify(queue: .main) {
-            completion(pokemons)
-        }
+        return AnyPublisher(colletion)
     }
 
 }

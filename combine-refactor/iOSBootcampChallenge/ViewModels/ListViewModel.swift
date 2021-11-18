@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 protocol ListViewModelDelegate: AnyObject {
     func didBeginRefresing()
@@ -15,10 +16,12 @@ protocol ListViewModelDelegate: AnyObject {
 
 class ListViewModel: NSObject {
 
-    private let model: PokeModel
+    private var model: PokeModel
     private var pokemons: [Pokemon] = []
 
     private weak var delegate: ListViewModelDelegate?
+
+    var cancelBag = Set<AnyCancellable>()
 
     init(model: PokeModel, delegate: ListViewModelDelegate? = nil) {
         self.model = model
@@ -47,10 +50,16 @@ class ListViewModel: NSObject {
     @objc func refresh() {
         delegate?.didBeginRefresing()
 
-        model.getListOfPokemons(limit: 151, completion: { [weak self] pokemons in
-            self?.pokemons = pokemons
-            self?.didRefresh()
-        })
+        model.getListOfPokemons(limit: 151)?
+            .receive(on: RunLoop.main)
+            .sink(receiveCompletion: { completion in
+                guard case let .failure(error) = completion else { return }
+                fatalError(error.localizedDescription)
+            }, receiveValue: { [weak self] pokemons in
+                self?.pokemons = pokemons
+                self?.didRefresh()
+            })
+            .store(in: &cancelBag)
     }
 
     func didRefresh() {

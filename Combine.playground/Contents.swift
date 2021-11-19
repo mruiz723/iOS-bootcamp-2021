@@ -1,12 +1,21 @@
 import Foundation
 import Combine
 
+// Built-in publisher NotificationCenter
+
+// we create a custom notification extending the Name struct
+extension Notification.Name {
+    static let tickingClock = Notification.Name(rawValue: "Clock.notification.ticking")
+}
+
+// clock class acts as publisher posting notification with the default notification center
 class Clock {
 
     var seconds: Int = 0
 
     let notificationCenter = NotificationCenter.default
 
+    /// start incrementing the seconds property and posting the tickingClock notification
     func start() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
             guard let clock = self else { return }
@@ -18,20 +27,20 @@ class Clock {
 
 let clock = Clock()
 
-extension Notification.Name {
-    static let tickingClock = Notification.Name(rawValue: "Clock.notification.ticking")
-}
-
+// Publisher
 let notificationPublisher = NotificationCenter.Publisher(center: clock.notificationCenter, name: .tickingClock, object: nil)
 
+// Subscriber
 let notificationSubscriber = Subscribers.Assign(object: clock, keyPath: \Clock.seconds)
 
+// Operator
 let converter = Publishers.Map(upstream: notificationPublisher, transform: { notification -> Int in
     return (notification.object as? Clock)?.seconds ?? 0
 })
 
 converter.subscribe(notificationSubscriber)
 
+// Cancellable
 // if cancellable is deallocated, the subscription will get cancelled
 var reference: Cancellable?
 reference = converter.sink(receiveValue: { seconds in
@@ -46,7 +55,7 @@ clock.start()
 
 // RUN the clock
 
-
+// Subscription data-flow
 let _ = Just(5) // <Int, Never>
     .map { value -> String in
         // operation with the incoming value here
@@ -57,8 +66,11 @@ let _ = Just(5) // <Int, Never>
         // sink is the subscriber and terminates the pipeline
         print("The end result was \(receivedValue)")
     }
+// no need to hold the refernece because it will exceute just once
+
 
 // RUN Just once
+
 
 var pokeView  = PokeView()
 var publisher = PassthroughSubject<Int, Never>()

@@ -29,7 +29,7 @@ Presentation:
 Recording:
 - https://drive.google.com/file/d/1g1H9Cu5h7wmAUfB3nKMKf4U2YIJJM3Do/view
 
-### Session 3
+### Session 4
 **Functional Programming, RxSwift, Combine**
 
 Presentation:

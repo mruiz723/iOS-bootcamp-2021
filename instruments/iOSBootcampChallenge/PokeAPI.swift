@@ -14,7 +14,7 @@ class PokeAPI {
     static let baseURL = "https://pokeapi.co/api/v2"
 
     @discardableResult
-    func get<T: Decodable>(url: String) -> Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, T, JSONDecoder>? {
+    func get<T: Decodable>(url: String) -> AnyPublisher<T, Error>? {
         let path = url.replacingOccurrences(of: PokeAPI.baseURL, with: "")
         let publisher = URLSession.shared.dataTaskPublisher(with: PokeAPI.baseURL + path)?
             .tryMap { element -> Data in
@@ -25,7 +25,7 @@ class PokeAPI {
                 return element.data
             }
             .decode(type: T.self, decoder: JSONDecoder())
-        return publisher
+        return publisher?.eraseToAnyPublisher()
     }
 
 }

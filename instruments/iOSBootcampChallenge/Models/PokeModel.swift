@@ -16,17 +16,14 @@ struct PokeModel {
         self.api = api
     }
 
-    func getListOfPokemons(limit: Int) -> AnyPublisher<[Pokemon], Error>? // Publishers.Collect<Publishers.FlatMap<Publishers.Sequence<[Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>], Never>.Output, Publishers.FlatMap<Publishers.SetFailureType<Publishers.Sequence<[Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>], Never>, Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, PokemonList, JSONDecoder>.Failure>, Publishers.Map<Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, PokemonList, JSONDecoder>, [Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>]>>>>
-    {
+    func getListOfPokemons(limit: Int) -> AnyPublisher<[Pokemon], Error>? {
 
-        guard
-            let serialPublisher: Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, PokemonList, JSONDecoder> = self.api.get(url: "/pokemon?limit=\(limit)")
-        else { return nil }
+        let serialPublisher: AnyPublisher<PokemonList, Error>? = self.api.get(url: "/pokemon?limit=\(limit)")
 
-        let colletion = serialPublisher
-            .map { (list: PokemonList) -> [Publishers.Decode<Publishers.TryMap<URLSession.DataTaskPublisher, Data>, Pokemon, JSONDecoder>] in
+        let colletion = serialPublisher?
+            .map { (list: PokemonList) -> [AnyPublisher<Pokemon, Error>] in
                 list.results.compactMap {
-                    self.api.get(url: "/pokemon/\($0.id)/")
+                    self.api.get(url: "/pokemon/\($0.id)/")?.eraseToAnyPublisher()
                 }
             }
             .flatMap { publishers in
@@ -35,7 +32,7 @@ struct PokeModel {
             .flatMap { $0 }
             .collect()
 
-        return AnyPublisher(colletion)
+        return colletion?.eraseToAnyPublisher()
     }
 
 }

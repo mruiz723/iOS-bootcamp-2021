@@ -136,11 +136,7 @@ class PokeCell: UICollectionViewCell {
             nameLabel.text = pokemon.name.capitalized
 
             if let image = pokemon.image, let url = URL(string: image) {
-                imageView.kf.setImage(with: url, options: [
-                    .forceRefresh,
-                    .memoryCacheExpiration(.expired),
-                    .diskCacheExpiration(.expired)
-                ])
+                imageView.kf.setImage(with: url)
             }
 
             for type in pokemon.types ?? [] {

@@ -147,7 +147,10 @@ extension DetailView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.contentMode = .scaleAspectFit
         if let url = viewModel.pokemonImageURL {
-            view.kf.setImage(with: url)
+            view.kf.setImage(with: url, options: [
+                .forceRefresh,
+                .memoryCacheExpiration(.expired)
+            ])
         }
         return view
     }

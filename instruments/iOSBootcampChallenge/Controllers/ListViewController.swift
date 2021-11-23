@@ -41,6 +41,9 @@ class ListViewController: UICollectionViewController {
         // Set up the searchController parameters.
         navigationItem.searchController = searchController
         definesPresentationContext = true
+
+        URLSession.shared.configuration.requestCachePolicy = .reloadIgnoringLocalAndRemoteCacheData
+        URLSession.shared.configuration.urlCache = nil
     }
 
     // MARK: Components

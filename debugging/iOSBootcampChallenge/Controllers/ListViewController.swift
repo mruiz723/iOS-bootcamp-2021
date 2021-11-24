@@ -76,7 +76,7 @@ class ListViewController: UICollectionViewController {
         }
 
         detailViewController.pokemon = pokemon
-        detailViewController.onDismissBlock = {
+        detailViewController.onDismissBlock = { [unowned detailViewController] in
             print("good job! ", detailViewController.pokemon ?? "")
         }
 

@@ -124,6 +124,8 @@ extension Pokemon {
 
 }
 
-extension Pokemon {
-
+extension Pokemon: CustomDebugStringConvertible {
+    var debugDescription: String {
+        "\(id), \(name)"
+    }
 }

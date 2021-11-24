@@ -26,12 +26,19 @@ class DetailViewController: UIViewController {
         }
     }
 
+    var onDismissBlock: (() -> Void)?
 }
 
 extension DetailViewController: DetailViewDelegate {
 
     func closeButtonPressed() {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: onDismissBlock)
     }
 
+}
+
+extension DetailViewController {
+    override var debugDescription: String {
+        "detail view controller for: \(pokemon?.name ?? "")"
+    }
 }

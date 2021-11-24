@@ -76,6 +76,12 @@ class ListViewController: UICollectionViewController {
         }
 
         detailViewController.pokemon = pokemon
+        detailViewController.onDismissBlock = {
+            print("good job! ", detailViewController.pokemon ?? "")
+        }
+
+        print("go get 'em! ", pokemon)
+
     }
 
 }

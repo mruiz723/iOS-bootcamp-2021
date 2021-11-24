@@ -123,3 +123,7 @@ extension Pokemon {
     }
 
 }
+
+extension Pokemon {
+
+}

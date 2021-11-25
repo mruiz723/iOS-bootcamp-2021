@@ -37,3 +37,12 @@ Presentation:
 
 Recording:
 - https://drive.google.com/file/d/1Ii4_dyFZvChgrV770Bm1DIJJSYmq15ae/view
+
+### Session 5
+**SwiftUI, Instruments Debugging**
+
+Presentation:
+- https://docs.google.com/presentation/d/1VSeKTp0w3mp2BQr0-A-LA8uj66MpgQxXavUknl5tWAc/view
+
+Recording:
+- https://drive.google.com/file/d/1Tm2513uor0j03ehfU5ElzFUdSfV_5P6M/view

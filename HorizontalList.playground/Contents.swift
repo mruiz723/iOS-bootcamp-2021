@@ -33,9 +33,9 @@ struct HorizontalList: View {
                         Text("\(poster.id)")
                     }
                 }
-                .frame(width: 200, height: 200, alignment: .leading)
+                .padding()
             }
-            .padding()
+            .frame(width: 200, height: 200, alignment: .leading)
         }
     }
 }
